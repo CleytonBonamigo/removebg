@@ -1,5 +1,8 @@
-# Remove BG
+<p align="center">
+    <img src="docs/logo.jpeg" width="600" alt="Remove BG">
+</p>
 
+------
 Remove the backgrounf of your images JPG automatically.
 
 ## Description
@@ -31,7 +34,7 @@ It only supports JPG, JPEG and PNG.
     ```
 3. Execute sending the input image and de desired output:
     ```bash
-    python removebg input.jpg output.png #eg: img/portfolio-perfil.jpeg img/portfolio-perfil.png
+    python removebg input.jpg #eg: img/portfolio-perfil.jpeg
     ```
 
  ### Using Docker
@@ -52,5 +55,5 @@ It only supports JPG, JPEG and PNG.
     ```
 4. Execute sending the input image and de desired output:
     ```bash
-    python removebg input.jpg output.png #eg: img/portfolio-perfil.jpeg img/portfolio-perfil.png
+    python removebg input.jpg #eg: img/portfolio-perfil.jpeg
     ```
