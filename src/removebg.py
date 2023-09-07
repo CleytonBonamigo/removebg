@@ -3,7 +3,7 @@ from PIL import Image
 import sys
 import os
 
-def removebg(inputPath, outputPath):
+def removebg(inputPath):
     # Get the file extension
     file_extension = os.path.splitext(inputPath)[1][1:].lower()
 
@@ -15,18 +15,19 @@ def removebg(inputPath, outputPath):
     try:
         originalImage = Image.open(inputPath)
         imageWithoutBg = remove(originalImage)
+
+        # Create the output path by replacing the file extension with ".png"
+        outputPath = os.path.splitext(inputPath)[0] + '.png'
         imageWithoutBg.save(outputPath)
+
         print("Background removed successfully.")
     except Exception as e:
         print(f"An error occurred: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":
-    if(len(sys.argv) < 3):
-        print("Usage: python removebg.py <input_path> <output_path>")
+    if(len(sys.argv) < 2):
+        print("Usage: python removebg.py <input_path>")
         sys.exit(1)
 
-    inputPath = sys.argv[1]
-    outputPath = sys.argv[2]
-
-    removebg(inputPath, outputPath)
+    removebg(sys.argv[1])
