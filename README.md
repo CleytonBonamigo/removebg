@@ -20,7 +20,14 @@ It only supports JPG, JPEG and PNG.
     ```
 2. Create new virtual environment:
     ```bash
-    python -m venv removebg #or any name that you want
+    #To create a new Virtual Env:
+    python -m venv removebg #You can change the "removebg" name of venv to whatever you want.
+
+    #To exit the venv
+    deactivate
+
+    #If you want to enter again into created Virtual Env
+    source removebg/bin/activate #Change "removebg" for whatever name that you named your venv.
     ```
 3. Execute sending the input image and de desired output:
     ```bash
@@ -28,6 +35,8 @@ It only supports JPG, JPEG and PNG.
     ```
 
  ### Using Docker
+ It takes a while to remove the background, but it works 😆.
+
  1. Clone the repository:
     ```bash
     git clone https://github.com/CleytonBonamigo/removebg.git
