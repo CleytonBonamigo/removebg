@@ -7,6 +7,7 @@ Remove the backgrounf of your images JPG automatically.
 
 ## Description
 `RemoveBG` is a command line tool that allows you to remove the backgrounf of your JPG file automatically.
+
 It only supports JPG, JPEG and PNG.
 
 ## Requirements
@@ -34,7 +35,7 @@ It only supports JPG, JPEG and PNG.
     ```
 3. Execute sending the input image and de desired output:
     ```bash
-    python removebg input.jpg #eg: img/portfolio-perfil.jpeg
+    python ./src/removebg.py input.jpg #eg: img/portfolio-perfil.jpeg
     ```
 
  ### Using Docker
@@ -55,5 +56,5 @@ It only supports JPG, JPEG and PNG.
     ```
 4. Execute sending the input image and de desired output:
     ```bash
-    python removebg input.jpg #eg: img/portfolio-perfil.jpeg
+    python ./src/removebg.py input.jpg #eg: img/portfolio-perfil.jpeg
     ```
