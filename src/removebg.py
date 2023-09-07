@@ -12,9 +12,14 @@ def removebg(inputPath, outputPath):
         print(f"Warning: Unsupported file type '{file_extension}'. Supported file types are: jpg, jpeg, png.")
         sys.exit(1)
 
-    originalImage = Image.open(inputPath)
-    imageWithoutBg = remove(originalImage)
-    imageWithoutBg.save(outputPath)
+    try:
+        originalImage = Image.open(inputPath)
+        imageWithoutBg = remove(originalImage)
+        imageWithoutBg.save(outputPath)
+        print("Background removed successfully.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     if(len(sys.argv) < 3):
