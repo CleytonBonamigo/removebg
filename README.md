@@ -33,7 +33,11 @@ It only supports JPG, JPEG and PNG.
     #If you want to enter again into created Virtual Env
     source removebg/bin/activate #Change "removebg" for whatever name that you named your venv.
     ```
-3. Execute sending the input image and de desired output:
+3. Install all requirements from pip:
+    ```bash
+    pip install --no-cache-dir -r requirements.txt
+    ```
+4. Execute sending the input image and de desired output:
     ```bash
     python ./src/removebg.py input.jpg #eg: img/portfolio-perfil.jpeg
     ```
